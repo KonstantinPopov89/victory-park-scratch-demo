@@ -506,7 +506,7 @@
       chip('friends', T.friends + (c.friends > 0 ? ' · ' + c.friends : ''), c.friends > 0) + '</div>' +
       (c.kids > 0 ? stepper('kids', T.kidsHow, c.kids, S.MAX_KIDS) : '') +
       (c.friends > 0 ? stepper('friends', T.friendsHow, c.friends, S.MAX_FRIENDS) : '') +
-      '<p class="muted small">' + esc(T.noAge) + '</p><button type="button" class="btn" data-act="who-close" data-fk="who-done">' + esc(T.done) + '</button>';
+      '<p class="muted small">' + esc(T.noAge) + '</p><button type="button" class="btn" data-act="who-close" data-fk="who-done">' + esc(T.done + ' · ' + T.forAll(persons().length)) + '</button>'; // r05: число идущих прямо в листе
     if (keep) { var el = sheet.querySelector('[data-fk="' + keep + '"]'); if (el) el.focus(); }
   }
   function openSheet() {
