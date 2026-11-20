@@ -201,7 +201,7 @@
       '<p class="basis">' + esc(S.companySet(state.company) ? (autoFirst ? T.hitsNoteCoAuto(period) : T.hitsNoteCo(period)) : autoFirst ? T.hitsNoteAuto(period) : T.hitsNote(period)) + ' ' + esc(T.showing(shown.length, all.length)) + ' · ' + esc(T.demoStatus) + '.</p>' +
       firstSwitch() +
       (rest.length ? '<h2 class="sub">' + esc(T.allTitle) + '</h2><p class="basis">' + esc(T.demoPrices + ' · ' + T.demoStatus) + '</p><ol class="cards grid">' + rest.map(cardSmall).join('') + '</ol>' : '') +
-      '<p class="foot">' + esc(T.tDemo) + ' ' + esc(T.photoNote) + (S.consent() === 'yes' ? ' <a href="#/log">' + esc(T.logLink) + '</a>' : '') + ' <span class="ver">r04 · 20.11.2026</span></p>'; // метка сборки: по ней замечания связываются с версией
+      '<p class="foot">' + esc(T.tDemo) + ' ' + esc(T.photoNote) + (S.consent() === 'yes' ? ' <a href="#/log">' + esc(T.logLink) + '</a>' : '') + ' <span class="ver">r05 · 20.11.2026</span></p>'; // метка сборки: по ней замечания связываются с версией
   }
 
   function linesHtml(lines, ps) {
